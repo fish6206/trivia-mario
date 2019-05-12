@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Trivia Game</title>
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!--Link to css page-->
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
+</head>
+
+<body>
+  <!--Header-->
+  <div class="header">
+    <h1 class="arcade">MARIO TRIVIA!</h1>
+  </div>
+
+  <!--Countdown-->
+  <div id="counter-wrapper" class="hide arcade">
+    <h2>TIME REMAINING:</h2>
+    <div id="counter-number">30</div>
+  </div>
+
+  <!--Start bootstrap container-->
+  <div class="container">
+    <!--Scores-->
+    <div class="row scores hide retro">
+      <div class="col score-box">
+        <h4>CORRECT</h4>
+        <!--Populates correct answers-->
+        <div class="correct-answers score-number">0</div>
+      </div>
+      <div class="col score-box">
+        <h4>UNANSWERED</h4>
+        <!--populates unanswered-->
+        <div class="un-answered score-number">7</div>
+      </div>
+      <div class="col score-box">
+        <h4>INCORRECT</h4>
+        <!--populates incorrect answers-->
+        <div class="wrong-answers score-number">0</div>
+      </div>
+    </div>
+
+    <!--Start Screen-->
+    <div class="row start-screen">
+      <div class="col text-center">
+        <h4 id="start-text" class="arcade">YOU HAVE 60 SECONDS. ANSWER AS MANY AS QUESTIONS AS YOU CAN</h4>
+      </div>
+    </div>
+    <div id="start-button" class="row text-center">
+      <div class=" col text-center">
+        <button type="button" class="btn-hover">START!</button>
+      </div>
+    </div>
+
+    <!--Questions-->
+
+    <!--Q1-->
+    <div class="row question1 hide question-text"> 
+      <div class="col text-center">    
+        <h2>In which game did Mario first appear?</h2>
+      </div>
+    </div>
+
+    <div class="row question1 answers1 hide">
+      <div class="col text-center">
+        <div class="form-check form-check-inline correct-answer1 answer-text">
+          A. Donkey Kong
+        </div>
+        <div class="form-check form-check-inline incorrect-answer1 answer-text">
+          B. Super Mario Bros.
+        </div>
+        <div class="form-check form-check-inline incorrect-answer1 answer-text">
+          C. The Legend of Zelda
+        </div>
+      </div>
+    </div>
+
+    <!--Q2-->
+    <div class="row question2 hide question-text">
+      <div class="col text-center">
+        <h2>Which of the following games did Mario creator Shigeru Miyamoto NOT design?</h2>
+      </div>
+    </div>
+
+    <div class="row question2 answers2 hide">
+      <div class="col text-center">
+        <div class="form-check form-check-inline incorrect-answer2 answer-text">
+          A. Donkey Kong
+        </div>
+        <div class="form-check form-check-inline correct-answer2 answer-text">
+          B. Kid Icarus
+        </div>
+        <div class="form-check form-check-inline incorrect-answer2 answer-text">
+          C. Excitebike
+        </div>
+      </div>
+    </div>
+
+    <!--Q3-->
+    <div class="row question3 hide question-text">
+      <div class="col text-center">
+        <h2>In Super Mario World, Mario made friends with a certain dinosaur. His name was:</h2>
+      </div>
+    </div>
+
+    <div class="row question3 answers3 hide question-text">
+      <div class="col text-center">
+        <div class="form-check form-check-inline incorrect-answer3 answer-text">
+          A. Little Foot
+        </div>
+        <div class="form-check form-check-inline incorrect-answer3 answer-text">
+          B. Birdo
+        </div>
+        <div class="form-check form-check-inline correct-answer3 answer-text">
+          C. Yoshi
+        </div>
+      </div>
+    </div>
+
+    <!--Q4-->
+    <div class="row question4 hide question-text">
+      <div class="col text-center">
+        <h2>In Super Mario Sunshine for the Gamecube, Mario made friends with a machine. Its name was:</h2>
+      </div>
+    </div>
+
+    <div class="row question4 answers4 hide">
+      <div class="col text-center incorrect-answer4 answer-text">
+        <div class="form-check form-check-inline">
+          A. It had no name
+        </div>
+        <div class="form-check form-check-inline correct-answer4 answer-text">
+          B. FLUDD
+        </div>
+        <div class="form-check form-check-inline incorrect-answer4 answer-text">
+          C. Junior
+        </div>
+      </div>
+    </div>
+
+    <!--Q5-->
+    <div class="row question5 hide question-text">
+      <div class="col text-center">
+        <h2>Mario's first 3D platformer game is:</h2>
+      </div>
+    </div>
+
+    <div class="row question5 answers5 hide">
+      <div class="col text-center incorrect-answer5 answer-text">
+        <div class="form-check form-check-inline">
+          A. Super Mario Sunshine
+        </div>
+        <div class="form-check form-check-inline incorrect-answer5 answer-text">
+          B. Super Mario World
+        </div>
+        <div class="form-check form-check-inline correct-answer5 answer-text">
+          C. Super Mario 64
+        </div>
+      </div>
+    </div>
+
+    <!--Q6-->
+    <div class="row question6 hide question-text">
+      <div class="col text-center">
+        <h2>Mario's original, and most recurring enemy in the Mario Brothers series is:</h2>
+      </div>
+    </div>
+
+    <div class="row question6 answers6 hide">
+      <div class="col text-center correct-answer6 answer-text">
+        <div class="form-check form-check-inline">
+          A. Bowser (King Koopa)
+        </div>
+        <div class="form-check form-check-inline incorrect-answer6 answer-text">
+          B. Wario
+        </div>
+        <div class="form-check form-check-inline incorrect-answer6 answer-text">
+          C. Toad
+        </div>
+      </div>
+    </div>
+
+    <!--Q7-->
+    <div class="row question7 hide question-text">
+      <div class="col text-center">
+        <h2>Before Mario became Mario, what was his name?</h2>
+      </div>
+    </div>
+
+    <div class="row question7 answers7 hide">
+      <div class="col text-center correct-answer7 answer-text">
+        <div class="form-check form-check-inline">
+          A. Jumpman
+        </div>
+        <div class="form-check form-check-inline incorrect-answer7 answer-text">
+          B. Plumber Man
+        </div>
+        <div class="form-check form-check-inline incorrect-answer7 answer-text">
+          C. Mark
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-correct">
+        <div class="col score-box">
+          <h4>CORRECT</h4>
+          <!--Populates correct answers-->
+          <div class="correct-answers score-number">0</div>
+        </div>
+      </div>
+      <div id="modal-incorrect">
+        <div class="col score-box">
+          <h4>INCORRECT</h4>
+          <!--populates incorrect answers-->
+          <div class="wrong-answers score-number">0</div>
+        </div>
+      </div>     
+      <!--div correct or incorrect results appended to-->
+      <div class="modal-result"></div>
+      <!--div img appended to-->
+      <div class="modal-img"></div>
+      <!--<button type="button" class="btn-hover">START!</button>-->
+      <button id="modal-btn" type="button" class="btn-nextq">NEXT QUESTION</button>
+      <button id="refresh-btn" type="button" class="play-again-btn hide">PLAY AGAIN</button>
+    </div>
+  </div>
+
+  <!--jquery link-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--link to java page-->
+  <script src="assets/index.js"></script>
+
+</body>
+
+</html>
